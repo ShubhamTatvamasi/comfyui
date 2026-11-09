@@ -15,4 +15,10 @@ helm upgrade -i comfyui m11s/comfyui \
   --set resources.limits."nvidia\.com/gpu"=1
 ```
 
+
+http://localhost:8188
+
+```bash
+kubectl -n comfyui port-forward svc/comfyui 8188:8188
+```
   
